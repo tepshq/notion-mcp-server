@@ -168,7 +168,7 @@ export class OpenAPIToMCPConverter {
     openApiLookup: Record<string, OpenAPIV3.OperationObject & { method: string; path: string }>
     zip: Record<string, { openApi: OpenAPIV3.OperationObject & { method: string; path: string }; mcp: NewToolMethod }>
   } {
-    const apiName = 'API'
+    const apiName = 'Notion'
 
     const openApiLookup: Record<string, OpenAPIV3.OperationObject & { method: string; path: string }> = {}
     const tools: Record<string, { methods: NewToolMethod[] }> = {
